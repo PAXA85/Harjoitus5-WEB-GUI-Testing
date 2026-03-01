@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RGB / HEX Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        form {
+            margin-bottom: 25px;
+        }
+
+        input {
+            padding: 6px;
+            margin: 5px 0;
+            width: 70px;
+        }
+
+        button {
+            padding: 6px 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RGB / HEX Converter</h1>
+
+        <div class="section">
+            <h2>RGB to HEX</h2>
+            <form action="/rgb-to-hex" method="get">
+                <div>
+                    R: <input type="number" name="r" min="0" max="255" required>
+                    G: <input type="number" name="g" min="0" max="255" required>
+                    B: <input type="number" name="b" min="0" max="255" required>
+                </div>
+                <br>
+                <button type="submit">Convert</button>
+            </form>
+        </div>
+
+        <div class="section">
+            <h2>HEX to RGB</h2>
+            <form action="/hex-to-rgb" method="get">
+                HEX: <input type="text" name="hex" placeholder="#FF0000" required>
+                <br><br>
+                <button type="submit">Convert</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

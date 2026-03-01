@@ -1,0 +1,19 @@
+{
+  "name": "harj5",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "mocha \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "chai": "^6.2.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.8.2",
+    "supertest": "^7.0.0"
+  }
+}
